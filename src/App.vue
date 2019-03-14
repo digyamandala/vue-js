@@ -1,44 +1,46 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-    <router-link to="/">
-      <img src="~assets/blibli-logo.png" alt="blibli-logo">
-    </router-link>
+    <NavbarComp></NavbarComp>
+    <HeaderComp></HeaderComp>
 
-    <div style="margin: 30px;">
-      <router-link to="/contact-us" class="button">
-        Contact Us
-      </router-link>
-    </div>
+    <!-- <div class="content">
+      <router-view/>
+    </div> -->
     <router-view/>
   </div>
 </template>
 
 <script>
+import HeaderComp from '@/components/skeletons/HeaderComp'
+import NavbarComp from '@/components/skeletons/NavbarComp'
+// const HeaderComp = () => import('@/components/skeletons/HeaderComp')
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    HeaderComp,
+    NavbarComp
+  }
 }
 </script>
 
 <style>
+html{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(50,90,101);
+  margin: 0;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
-.button{
-
-  background-color: lightblue;
-  padding: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
 
 .content{
   padding-top: 20px;
