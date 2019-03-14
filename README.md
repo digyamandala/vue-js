@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # online-mall
 
 > A Vue.js project
@@ -29,7 +28,3 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
-# vue-js
-Simple vue.js app
->>>>>>> 531cf5133c006b9c46cc18b9597a085dc1852077
